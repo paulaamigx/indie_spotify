@@ -1,0 +1,5 @@
+**/*.css
+**/*.svg
+**/*.ico
+**/*.md
+package-lock.json
