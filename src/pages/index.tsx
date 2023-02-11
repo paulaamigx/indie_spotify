@@ -1,5 +1,6 @@
-import { Logo, PlayingAnimation} from '@/components'
+import { AlbumHorizontal, Logo } from '@/components'
 import { Inter } from '@next/font/google'
+import { Lenna } from '@/assets'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +11,7 @@ export default function Home() {
       Hello World!
       <div style={{width: '100px', height: '200px'}}>
         <Logo/>
-        <PlayingAnimation/>
+        <AlbumHorizontal name='Test' isPlaying cover={Lenna}/>
       </div>
     </div>
   )

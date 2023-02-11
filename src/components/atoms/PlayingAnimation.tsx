@@ -1,8 +1,8 @@
 import { SWrapper } from '@/styles/PlayingAnimation'
 
-const PlayingAnimation = () => {
+const PlayingAnimation = ({className}: {className: string}) => {
   return(
-    <SWrapper>
+    <SWrapper className={className}>
       <div/>
       <div/>
       <div/>
