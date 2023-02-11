@@ -1,5 +1,5 @@
+import { Logo, PlayingAnimation} from '@/components'
 import { Inter } from '@next/font/google'
-import { Logo } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -8,7 +8,10 @@ export default function Home() {
   return (
     <div className={inter.className}>
       Hello World!
-      <Logo/>
+      <div style={{width: '100px', height: '200px'}}>
+        <Logo/>
+        <PlayingAnimation/>
+      </div>
     </div>
   )
 }
