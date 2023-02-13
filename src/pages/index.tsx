@@ -1,4 +1,4 @@
-import { AlbumHorizontal, Logo } from '@/components'
+import { AlbumHorizontal, AlbumVertical, Logo } from '@/components'
 import { Inter } from '@next/font/google'
 import { Lenna } from '@/assets'
 
@@ -12,6 +12,7 @@ export default function Home() {
       <div style={{width: '100px', height: '200px'}}>
         <Logo/>
         <AlbumHorizontal name='Test' isPlaying cover={Lenna}/>
+        <AlbumVertical name='Test' cover={Lenna} artist='Lenna'/>
       </div>
     </div>
   )
