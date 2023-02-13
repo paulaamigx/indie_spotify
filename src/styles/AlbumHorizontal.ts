@@ -1,12 +1,10 @@
 import { PlayingAnimation } from '@/components'
 import styled from 'styled-components'
 
-const ratio = 4
-
 export const SWrapper = styled.div`
   display: flex;
   width: 100%;
-  aspect-ratio: ${ratio};
+  aspect-ratio: 4;
   background-color: rgba(0, 0, 0, .8);
   color: white;
   border-radius: .1rem;
@@ -16,7 +14,8 @@ export const SWrapper = styled.div`
   padding-right: 10%;
   img{
     height: 100%;
-    width: ${100/ratio}%;
+    width: auto;
+    aspect-ratio: 1;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
     flex-shrink: 0;
