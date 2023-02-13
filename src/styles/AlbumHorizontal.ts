@@ -24,7 +24,7 @@ export const SWrapper = styled.div`
   p{
     width: 100%;
     font-size: .8rem;
-    font-weight: bold;
+    font-weight: 800;
   }
 `
 

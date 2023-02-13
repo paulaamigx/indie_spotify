@@ -16,42 +16,42 @@ body{
 @font-face {
   font-family: 'Spotify';
   src: url('../../public/assets/fonts/Spotify-Font/Gotham-Bold.otf');
-  font-weight: bold;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spotify';
   src: url('../../public/assets/fonts/Spotify-Font/Gotham-Black.otf');
-  font-weight: black;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spotify';
   src: url('../../public/assets/fonts/Spotify-Font/GothamBook.ttf');
-  font-weight: book;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spotify';
   src: url('../../public/assets/fonts/Spotify-Font/Gotham-Light.otf');
-  font-weight: light;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spotify';
   src: url('../../public/assets/fonts/Spotify-Font/GothamMedium.ttf');
-  font-weight: medium;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spotify';
   src: url('../../public/assets/fonts/Spotify-Font/Gotham-Thin.otf');
-  font-weight: thin;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
