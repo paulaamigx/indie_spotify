@@ -6,25 +6,27 @@ import {Lenna} from '@/assets'
 interface Props{
   song?: ISong;
   setSong: Dispatch<SetStateAction<ISong>>
-  isPlaying: boolean;
-  setIsPlaying: Dispatch<SetStateAction<boolean>>
+  isPlaying: string;
+  setIsPlaying: Dispatch<SetStateAction<string>>
 }
 
 const defaultState = {
-  isPlaying: false,
+  isPlaying: '',
   setIsPlaying:function noop () {null},
   setSong:function noop () {null},
   song: {
+    id: '0',
     title: 'Test',
     artist: 'Lenna',
-    cover: Lenna
+    cover: Lenna,
+    liked: false
   }
 }
 
 const PlayingContext = createContext<Props>(defaultState)
 
 export const PlayingProvider = ({children}:{children: ReactNode}) => {
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isPlaying, setIsPlaying] = useState('')
   const [song, setSong] = useState(defaultState.song)
   const initValue =  {isPlaying, setIsPlaying, song, setSong}
 
