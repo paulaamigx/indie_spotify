@@ -1,5 +1,6 @@
 import { faHeart, faPause,  faPlay } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { SFontAwesomeIcon } from '@/styles/LikeButton'
 import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons'
 import { usePlayingContext } from '@/contexts'
 
@@ -20,7 +21,8 @@ const usePlayerControl = () => {
       icon={isPlaying === song?.id? faPause : faPlay} />
 
   const LikeButton = () =>
-    <FontAwesomeIcon
+    <SFontAwesomeIcon
+      liked={!!song?.liked}
       onClick={handleLike}
       icon={song?.liked? faHeart : faHeartRegular} />
 

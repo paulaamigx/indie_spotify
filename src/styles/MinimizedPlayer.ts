@@ -31,13 +31,9 @@ export const SInfo = styled.div`
   }
 `
 
-export const SIcons = styled.div<{liked: boolean}>`
+export const SIcons = styled.div`
   display: flex;
   gap: .3rem;
   color: white;
   cursor: pointer;
-  svg:nth-child(1){
-    color: ${props => props.liked?
-    'var(--main)': 'white'};
-  }
 `

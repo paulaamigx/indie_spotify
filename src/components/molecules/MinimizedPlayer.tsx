@@ -16,7 +16,7 @@ const MinimizedPlayer = () => {
             <p>{song.title}</p>
             <p>{song.artist}</p>
           </SInfo>
-          <SIcons liked={song.liked}>
+          <SIcons>
             <LikeButton/>
             <PlayButton/>
           </SIcons>
