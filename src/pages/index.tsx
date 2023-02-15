@@ -1,5 +1,5 @@
 import { AlbumHorizontal, AlbumVertical, ControlBar, Logo,
-  MinimizedPlayer } from '@/components'
+  MinimizedPlayer, Title } from '@/components'
 import { Inter } from '@next/font/google'
 import { Lenna } from '@/assets'
 
@@ -9,8 +9,8 @@ export default function Home() {
 
   return (
     <div className={inter.className}>
-      Hello World!
       <div style={{width: '100px', height: '200px'}}>
+        <Title text='Buenos días'/>
         <Logo/>
         <AlbumHorizontal name='Test' isPlaying cover={Lenna}/>
         <AlbumVertical name='Test' cover={Lenna} artist='Lenna'/>
