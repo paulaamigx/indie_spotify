@@ -8,10 +8,15 @@
   font-family: 'Spotify';
   font-size: 10px;
 }
+html{
+  background-color: white;
+}
 body{
   width: 100vw;
   overflow: scroll;
   background-color: black;
+  max-width: 798px;
+  height: 100vh;
 }
 
 @font-face {
