@@ -11,6 +11,7 @@
 body{
   width: 100vw;
   overflow: scroll;
+  background-color: black;
 }
 
 @font-face {

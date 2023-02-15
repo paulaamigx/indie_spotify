@@ -4,4 +4,5 @@ export {default as AlbumHorizontal} from './atoms/AlbumHorizontal'
 export {default as AlbumVertical} from './atoms/AlbumVertical'
 
 export {default as MinimizedPlayer} from './molecules/MinimizedPlayer'
+export {default as ControlBar} from './molecules/ControlBar'
 
