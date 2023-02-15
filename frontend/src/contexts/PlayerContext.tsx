@@ -1,7 +1,6 @@
 import { Dispatch, ReactNode, SetStateAction, createContext, useContext,
   useState } from 'react'
 import { ISong } from '@/types/song'
-import {Lenna} from '@/assets'
 
 interface Props{
   song?: ISong;
@@ -17,8 +16,7 @@ const defaultState = {
   song: {
     id: '0',
     title: 'Test',
-    artist: 'Lenna',
-    cover: Lenna,
+    albumId: '0',
     liked: false
   }
 }
