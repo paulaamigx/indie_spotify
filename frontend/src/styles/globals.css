@@ -1,12 +1,17 @@
 :root{
-  --main: #1DB954
+  --main: #1DB954;
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Spotify';
-  font-size: 10px;
+  font-size: 15px;
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
 }
 html{
   background-color: white;
@@ -17,6 +22,7 @@ body{
   background-color: black;
   max-width: 798px;
   height: 100vh;
+  padding: 1.5rem;
 }
 
 @font-face {

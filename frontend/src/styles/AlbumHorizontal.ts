@@ -8,7 +8,7 @@ export const SWrapper = styled.div`
   background-color: #302c2c;
   color: white;
   border-radius: .1rem;
-  gap: 10%;
+  gap: 5%;
   align-items: center;
   justify-content: space-between;
   padding-right: 10%;
