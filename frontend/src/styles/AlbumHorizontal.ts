@@ -5,7 +5,7 @@ export const SWrapper = styled.div`
   display: flex;
   width: 100%;
   aspect-ratio: 4;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: #302c2c;
   color: white;
   border-radius: .1rem;
   gap: 10%;

@@ -1,21 +1,34 @@
-import { AlbumHorizontal, AlbumVertical, ControlBar, Logo,
-  MinimizedPlayer, Title } from '@/components'
+import { AlbumHorizontal, AlbumVertical, MinimizedPlayer,
+  Title } from '@/components'
+import { Albums } from '@/assets/SongsFixtures'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Inter } from '@next/font/google'
-import { Lenna } from '@/assets'
-
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
+import { usePlayingContext } from '@/contexts'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { isPlaying } = usePlayingContext()
 
   return (
     <div className={inter.className}>
       <div style={{width: '100px', height: '200px'}}>
         <Title text='Buenos días'/>
-        <Logo/>
-        <AlbumHorizontal name='Test' isPlaying cover={Lenna}/>
-        <AlbumVertical name='Test' cover={Lenna} artist='Lenna'/>
+        <FontAwesomeIcon icon={faPenToSquare}/>
+        {Albums.map(album=>
+          <AlbumHorizontal
+            key={`albumH_${album.id}`}
+            title={album.title}
+            isPlaying={isPlaying === album.id}
+            cover={album.cover}/>
+        )}
+        {Albums.map(album=>
+          <AlbumVertical
+            title={album.title}
+            cover={album.cover}
+            artist={album.artist}/>
+        )}
         <MinimizedPlayer/>
-        <ControlBar/>
       </div>
     </div>
   )

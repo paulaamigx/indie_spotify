@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SWrapper = styled.div`
-  background-color: rgba(0,0,0, .8);
+  background-color: #302c2c;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;

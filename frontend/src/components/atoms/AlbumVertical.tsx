@@ -3,18 +3,18 @@ import { SInfo, SWrapper } from '@/styles/AlbumVertical'
 
 interface Props {
   cover: StaticImageData,
-  name: string,
+  title: string,
   artist: string
 }
 
-const AlbumVertical = ({cover, name, artist}: Props) => {
+const AlbumVertical = ({cover, title, artist}: Props) => {
   return(
     <SWrapper>
       <Image
         src={cover}
         alt='cover'/>
       <SInfo>
-        <p>{name}</p>
+        <p>{title}</p>
         <p>{artist}</p>
       </SInfo>
     </SWrapper>

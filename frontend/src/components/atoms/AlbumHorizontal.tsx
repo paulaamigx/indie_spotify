@@ -3,17 +3,17 @@ import { SPlayingAnimation,  SWrapper } from '@/styles/AlbumHorizontal'
 
 interface Props {
   cover: StaticImageData,
-  name: string,
+  title: string,
   isPlaying?: boolean
 }
 
-const AlbumHorizontal = ({cover, name, isPlaying}: Props) => {
+const AlbumHorizontal = ({cover, title, isPlaying}: Props) => {
   return(
     <SWrapper>
       <Image
         src={cover}
         alt='cover'/>
-      <p>{name}</p>
+      <p>{title}</p>
       {isPlaying && <SPlayingAnimation/>}
     </SWrapper>
   )

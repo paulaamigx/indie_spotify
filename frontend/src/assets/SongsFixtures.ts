@@ -1,7 +1,7 @@
 import { IAlbum} from '@/types/song'
 import { Lenna } from '.'
 
-export const Songs: IAlbum[] = [
+export const Albums: IAlbum[] = [
   {
     id: '0',
     title: 'album0',
