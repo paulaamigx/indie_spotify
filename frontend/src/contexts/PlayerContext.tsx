@@ -1,5 +1,5 @@
-import { Dispatch, ReactNode, SetStateAction, createContext, useContext,
-  useState } from 'react'
+import { Dispatch, ReactNode, SetStateAction, createContext,
+  useContext, useState } from 'react'
 import { ISong } from '@/types/song'
 
 interface Props{
@@ -15,7 +15,7 @@ const defaultState = {
   setSong:function noop () {null},
   song: {
     id: '0',
-    title: 'Test',
+    title: 'Song0',
     albumId: '0',
     liked: false
   }
