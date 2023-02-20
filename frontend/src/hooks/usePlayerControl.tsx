@@ -22,7 +22,7 @@ const usePlayerControl = () => {
 
   const LikeButton = () =>
     <SFontAwesomeIcon
-      liked={!!song?.liked}
+      $liked={!!song?.liked}
       onClick={handleLike}
       icon={song?.liked? faHeart : faHeartRegular} />
 
