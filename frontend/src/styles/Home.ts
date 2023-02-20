@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 export const SFontAwesomeIcon = styled(FontAwesomeIcon)`
   color: white;
- `
+  cursor: pointer;
+`
 
 export const SWrapper = styled.div`
   display: flex;

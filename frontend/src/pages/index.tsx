@@ -1,5 +1,5 @@
 import { AlbumsHorizontalContainer, AlbumsVerticalContainer,
-  MinimizedPlayer, Title } from '@/components'
+  Title } from '@/components'
 import { SFontAwesomeIcon, SWrapper } from '@/styles/Home'
 import { Inter } from '@next/font/google'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +14,6 @@ export default function Home() {
       <SFontAwesomeIcon icon={faPenToSquare}/>
       <AlbumsHorizontalContainer/>
       <AlbumsVerticalContainer/>
-      <MinimizedPlayer/>
     </SWrapper>
   )
 }

@@ -1,5 +1,6 @@
 :root{
   --main: #1DB954;
+  --padding: 1.2rem;
 }
 * {
   box-sizing: border-box;
@@ -17,12 +18,14 @@ html{
   background-color: white;
 }
 body{
+  margin: auto;
   width: 100vw;
   overflow: scroll;
   background-color: black;
   max-width: 798px;
   height: 100vh;
-  padding: 1.5rem;
+  padding: 3rem var(--padding);
+  position: relative;
 }
 
 @font-face {
