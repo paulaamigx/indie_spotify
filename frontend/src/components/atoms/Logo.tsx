@@ -2,9 +2,9 @@ import { SLine, SLineBorderLeft, SLineBorderRight,
   SLineWrapper,  SWrapper } from '@/styles/Logo'
 export type SizeType = 's' | 'm' | 'l'
 
-const Logo = () => {
+const Logo = ({className}:{className?: string}) => {
   return(
-    <SWrapper>
+    <SWrapper className={className}>
       <Line size='l'/>
       <Line size='m'/>
       <Line size='s'/>
