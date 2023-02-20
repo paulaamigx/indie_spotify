@@ -23,11 +23,11 @@ export const SInfo = styled.div`
   color: white;
   p:nth-child(1){
     font-weight: 600;
-    font-size: .7rem;
+    font-size: .9rem;
   }
   p:nth-child(2){
     font-weight: 500;
-    font-size: .6rem;
+    font-size: .7rem;
   }
 `
 
